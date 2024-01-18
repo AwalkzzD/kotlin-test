@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/taskData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="40dp"
+        android:autofillHints="name"
+        android:fontFamily="@font/alata"
+        android:hint="@string/taskDetails_msg"
+        android:includeFontPadding="true"
+        android:inputType="textMultiLine"
+        android:textSize="20sp" />
+
+<!--    <GridLayout-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_gravity="center_horizontal"-->
+<!--        android:useDefaultMargins="true">-->
+
+<!--        <Button-->
+<!--            android:id="@+id/addTaskBtn"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:background="@drawable/transparent_bg_bordered_button"-->
+<!--            android:fontFamily="@font/alata"-->
+<!--            android:text="@string/add_task_msg"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:textSize="25sp" />-->
+
+<!--        <Button-->
+<!--            android:id="@+id/cancelTask"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:background="@drawable/transparent_bg_bordered_button"-->
+<!--            android:fontFamily="@font/alata"-->
+<!--            android:text="@string/cancel_task_msg"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:textSize="25sp" />-->
+<!--    </GridLayout>-->
+
+
+</LinearLayout>

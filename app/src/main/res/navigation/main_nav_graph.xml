@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav_graph"
+    app:startDestination="@id/homeFragment">
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.myapplication.fragments.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="com.example.myapplication.fragments.AboutFragment"
+        android:label="About Us"
+        tools:layout="@layout/fragment_about" />
+    <fragment
+        android:id="@+id/contactsFragment"
+        android:name="com.example.myapplication.fragments.ContactsFragment"
+        android:label="Contacts"
+        tools:layout="@layout/fragment_contacts" />
+    <activity
+        android:id="@+id/ratingActivity2"
+        android:name="com.example.myapplication.RatingActivity"
+        android:label="activity_rating"
+        tools:layout="@layout/activity_rating" />
+    <activity
+        android:id="@+id/toDoActivity"
+        android:name="com.example.myapplication.ToDoActivity"
+        android:label="activity_to_do"
+        tools:layout="@layout/activity_to_do" />
+
+</navigation>
