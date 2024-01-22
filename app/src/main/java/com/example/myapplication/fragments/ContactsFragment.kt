@@ -5,17 +5,18 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import com.example.myapplication.R
+import com.example.myapplication.databinding.FragmentContactsBinding
 
 
 class ContactsFragment : Fragment() {
-
+    lateinit var binding: FragmentContactsBinding
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_contacts, container, false)
+        binding = FragmentContactsBinding.inflate(inflater)
+        return binding.root
     }
 
 }

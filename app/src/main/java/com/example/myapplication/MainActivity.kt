@@ -3,7 +3,6 @@ package com.example.myapplication
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.myapplication.databinding.ActivityMainBinding
 
@@ -11,7 +10,9 @@ const val USERNAME = "username"
 const val PASSWORD = "password"
 
 class MainActivity : AppCompatActivity() {
+
     private lateinit var binding: ActivityMainBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
@@ -58,12 +59,14 @@ class MainActivity : AppCompatActivity() {
     */
 
     private fun verifyUser() {
-        if (binding.username.text.toString() == "awalkzz" && binding.password.text.toString() == "devarshi") {
+        val intent = Intent(this, HomeActivity::class.java)
+        startActivity(intent)
+        /*if (binding.username.text.toString() == "awalkzz" && binding.password.text.toString() == "devarshi") {
             Toast.makeText(this, "User is verified", Toast.LENGTH_SHORT).show()
             val intent = Intent(this, HomeActivity::class.java)
             startActivity(intent)
         } else {
             Toast.makeText(this, "User is not verified", Toast.LENGTH_SHORT).show()
-        }
+        }*/
     }
 }

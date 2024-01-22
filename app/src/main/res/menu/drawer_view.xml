@@ -1,37 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:title="Fragments">
-        <menu>
-            <group android:checkableBehavior="single">
-                <item
-                    android:id="@+id/homeFragment"
-                    android:icon="@drawable/bookmark_filled"
-                    android:title="Home" />
-                <item
-                    android:id="@+id/contactsFragment"
-                    android:icon="@drawable/bookmark_filled"
-                    android:title="Contacts" />
-                <item
-                    android:id="@+id/aboutFragment"
-                    android:icon="@drawable/bookmark_filled"
-                    android:title="About" />
-            </group>
-        </menu>
-    </item>
-
-    <item android:title="Activities">
-        <menu>
-            <group android:checkableBehavior="single">
-                <item
-                    android:id="@+id/toDoActivity"
-                    android:icon="@drawable/bookmark_filled"
-                    android:title="To-Do" />
-                <item
-                    android:id="@+id/ratingActivity2"
-                    android:icon="@drawable/bookmark_filled"
-                    android:title="Rate Us!" />
-            </group>
-        </menu>
-    </item>
-
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/homeFragment"
+            android:icon="@drawable/bookmark_filled"
+            android:title="Home" />
+        <item
+            android:id="@+id/contactsFragment"
+            android:icon="@drawable/bookmark_filled"
+            android:title="Contacts" />
+        <item
+            android:id="@+id/aboutFragment"
+            android:icon="@drawable/bookmark_filled"
+            android:title="About" />
+    </group>
 </menu>

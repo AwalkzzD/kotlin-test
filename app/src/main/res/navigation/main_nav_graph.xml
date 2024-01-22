@@ -19,15 +19,4 @@
         android:name="com.example.myapplication.fragments.ContactsFragment"
         android:label="Contacts"
         tools:layout="@layout/fragment_contacts" />
-    <activity
-        android:id="@+id/ratingActivity2"
-        android:name="com.example.myapplication.RatingActivity"
-        android:label="activity_rating"
-        tools:layout="@layout/activity_rating" />
-    <activity
-        android:id="@+id/toDoActivity"
-        android:name="com.example.myapplication.ToDoActivity"
-        android:label="activity_to_do"
-        tools:layout="@layout/activity_to_do" />
-
 </navigation>
