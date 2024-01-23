@@ -27,6 +27,11 @@ android {
                 "proguard-rules.pro"
             )
         }
+
+        /*debug {
+            isMinifyEnabled = true
+            isShrinkResources = true
+        }*/
     }
 
     buildFeatures {
@@ -55,7 +60,7 @@ dependencies {
     api("androidx.navigation:navigation-dynamic-features-fragment:$nav_version")
     androidTestImplementation("androidx.navigation:navigation-testing:$nav_version")
     implementation("androidx.navigation:navigation-compose:$nav_version")
-    implementation("com.google.android.material:material:1.9.0")
+    implementation("com.google.android.material:material:1.6.1")
     implementation("androidx.core:core-ktx:1.12.0")
     implementation("androidx.appcompat:appcompat:1.6.1")
 

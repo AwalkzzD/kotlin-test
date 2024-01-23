@@ -11,12 +11,27 @@
     <string name="appRatingMsg">Please rate this app!</string>
     <string name="defaultRatingMsg">Excellent!</string>
     <string name="rateBtnMsg">Rate</string>
-    <string name="taskType">All Tasks</string>
     <string name="addTaskContentDescription">Add Task by clicking this button</string>
     <string name="defaultTaskMessage">No Tasks Added!</string>
     <string name="taskDetails_msg">Enter task details...</string>
-    <string name="add_task_msg">Add Task</string>
-    <string name="cancel_task_msg">Cancel</string>
     <string name="todo_title">To-Do List</string>
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="dummy_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu erat neque. Cras fermentum, metus vel placerat tempor, neque turpis malesuada enim, id interdum risus dui ac nulla. Sed cursus porta volutpat. Nulla a consectetur ex. Mauris consectetur tortor luctus libero rhoncus imperdiet. Phasellus luctus ornare leo, et blandit lorem porta eget. Vestibulum nec aliquet purus. Aliquam erat volutpat. Cras cursus mauris quis nulla ornare venenatis. Quisque laoreet metus ut interdum volutpat. Vivamus sed congue leo. Praesent consequat diam dolor, in viverra libero interdum convallis. Nullam vel lectus mi. Cras tempus porta ligula, et consectetur velit varius finibus. Sed lobortis suscipit erat. Duis suscipit bibendum mi non laoreet. Aenean ut mi quis ex accumsan auctor. Proin a eleifend magna. Maecenas varius aliquet dui ut condimentum. Donec vitae augue quis augue iaculis finibus vel at augue. Donec finibus ante vitae tincidunt vehicula. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis rutrum ex libero, a ultricies erat hendrerit vitae. Vestibulum laoreet, turpis vel lobortis tristique, mi mauris maximus neque, eget euismod dui felis ut felis. Nullam euismod aliquam quam in semper. Vivamus vitae elit viverra metus ullamcorper pellentesque. Curabitur imperdiet ac tellus sed volutpat. Nam id molestie urna. Cras eu bibendum sem, et pellentesque nisi. Etiam accumsan vitae diam at suscipit. Duis ut ultricies lectus. Vivamus ut euismod ipsum, eu convallis lectus. Aenean tristique odio ligula. Ut ultricies quam nec elit posuere vestibulum. Donec ac lectus et tortor vulputate fermentum sit amet vitae ligula. Morbi fermentum dolor eget facilisis sodales.</string>
+
+    <string-array name="email_ids">
+        <item>1@1.com</item>
+        <item>2@1.com</item>
+        <item>3@1.com</item>
+        <item>1@2.com</item>
+        <item>2@2.com</item>
+        <item>3@2.com</item>
+        <item>1@3.com</item>
+        <item>2@3.com</item>
+        <item>3@3.com</item>
+    </string-array>
+
+    <string-array name="task_type">
+        <item>All</item>
+        <item>Starred</item>
+    </string-array>
+
 </resources>
