@@ -34,46 +34,10 @@ class MainActivity : AppCompatActivity() {
         verifyEmail()
         binding.signInBtn.setOnClickListener { verifyUser() }
     }
-    /*
-        override fun onSaveInstanceState(outState: Bundle) {
-            super.onSaveInstanceState(outState)
-            outState.putString(USERNAME, binding.username.text.toString())
-            outState.putString(PASSWORD, binding.password.text.toString())
-
-            Log.d("SAVE INSTANCE STATE DESTROY", "VALUES STORED")
-        }
-
-        override fun onRestoreInstanceState(savedInstanceState: Bundle) {
-            super.onRestoreInstanceState(savedInstanceState)
-            val userName: String = savedInstanceState.getString(USERNAME, "")
-            Log.d("SAVE INSTANCE STATE CREATE", "VALUES FETCHED $userName")
-        }*/
-
-    /*
-    override fun onPause() {
-    super.onPause()
-    Log.d("MAIN ACTIVITY", "Screen Paused")
-    }
-
-    override fun onStop() {
-    super.onStop()
-    Log.d("MAIN ACTIVITY", "Screen Stopped")
-    }
-
-    override fun onDestroy() {
-    super.onDestroy()
-    Log.d("MAIN ACTIVITY", "Screen Destroyed")
-    }
-
-    override fun onStart() {
-    super.onStart()
-    Log.d("MAIN ACTIVITY", "Screen Visible")
-    }
-    */
 
     private fun verifyUser() {
-//        val intent = Intent(this, HomeActivity::class.java)
-        val intent = Intent(this, ToDoActivity::class.java)
+        val intent = Intent(this, HomeActivity::class.java)
+//        val intent = Intent(this, ToDoActivity::class.java)
         startActivity(intent)
 
         /*if (binding.username.text.toString() == "1@1.com" && binding.password.text.toString() == "1") {

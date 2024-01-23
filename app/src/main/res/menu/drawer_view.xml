@@ -2,9 +2,9 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/homeFragment"
+            android:id="@+id/profileFragment"
             android:icon="@drawable/bookmark_filled"
-            android:title="Home" />
+            android:title="Profile" />
         <item
             android:id="@+id/contactsFragment"
             android:icon="@drawable/bookmark_filled"

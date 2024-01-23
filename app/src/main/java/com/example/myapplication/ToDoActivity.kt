@@ -83,7 +83,6 @@ class ToDoActivity : AppCompatActivity(), OnItemClickListener {
                         tasks.adapter = taskAdapter
                     }
                 }
-//                Toast.makeText(this@ToDoActivity, id.toString(), Toast.LENGTH_LONG).show()
             }
 
             override fun onNothingSelected(parent: AdapterView<*>?) {
@@ -192,21 +191,4 @@ class ToDoActivity : AppCompatActivity(), OnItemClickListener {
         builder.setCancelable(true)
         func() //lambda
     }
-
-//    spinner.onItemSelectedListener = object :
-//        AdapterView.OnItemSelectedListener {
-//        override fun onItemSelected(parent: AdapterView<*>,
-//                                    view: View, position: Int, id: Long) {
-//            Toast.makeText(this@MainActivity,
-//                getString(R.string.selected_item) + " " +
-//                        "" + languages[position], Toast.LENGTH_SHORT).show()
-//        }
-//
-//        override fun onNothingSelected(parent: AdapterView<*>) {
-//            // write code to perform some action
-//        }
-//    }
-//}
-
-
 }
