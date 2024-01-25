@@ -2,12 +2,14 @@ package com.example.myapplication.fragments
 
 import android.content.Intent
 import android.os.Bundle
+import android.text.method.ScrollingMovementMethod
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.example.myapplication.RatingActivity
 import com.example.myapplication.databinding.FragmentAboutBinding
+
 
 class AboutFragment : Fragment() {
     lateinit var binding: FragmentAboutBinding
@@ -24,6 +26,7 @@ class AboutFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        binding.dummyText.movementMethod = ScrollingMovementMethod()
         binding.rateBtn.setOnClickListener {
             val intent = Intent(activity, RatingActivity::class.java)
             startActivity(intent)
