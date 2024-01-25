@@ -2,13 +2,16 @@ package com.example.myapplication
 
 import android.content.DialogInterface
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import android.widget.EditText
+import android.widget.ImageButton
 import android.widget.Spinner
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
+import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.ItemTouchHelper
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -51,7 +54,24 @@ class ToDoActivity : AppCompatActivity(), OnItemClickListener {
 
         taskDao = db.taskDao()
         tasks = findViewById(R.id.tasks)
+
+        val layoutViewBtn = findViewById<ImageButton>(R.id.layoutBtn)
+        layoutViewBtn.tag = R.drawable.gridview_outline
         tasks.layoutManager = LinearLayoutManager(this)
+
+        layoutViewBtn.setOnClickListener {
+            Log.d("LAYOUT STATUS", "VIEW ACTIVE")
+
+            if (layoutViewBtn.tag == R.drawable.listview_outline) {
+                tasks.layoutManager = LinearLayoutManager(this)
+                layoutViewBtn.setImageResource(R.drawable.gridview_outline)
+                layoutViewBtn.tag = R.drawable.gridview_outline
+            } else {
+                tasks.layoutManager = GridLayoutManager(this, 2)
+                layoutViewBtn.setImageResource(R.drawable.listview_outline)
+                layoutViewBtn.tag = R.drawable.listview_outline
+            }
+        }
 
         val spinner = findViewById<Spinner>(R.id.taskType)
 
@@ -65,10 +85,7 @@ class ToDoActivity : AppCompatActivity(), OnItemClickListener {
 
         spinner.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
             override fun onItemSelected(
-                parent: AdapterView<*>?,
-                view: View?,
-                position: Int,
-                id: Long
+                parent: AdapterView<*>?, view: View?, position: Int, id: Long
             ) {
                 when (id) {
                     0L -> {

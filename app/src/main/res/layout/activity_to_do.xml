@@ -23,7 +23,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_weight="3"
-                android:background="#D3D3D3"
+                android:textColor="@color/grey_tint_5"
                 android:fontFamily="@font/alata"
                 android:padding="10dp"
                 android:text="@string/todo_title"
@@ -34,13 +34,23 @@
                 android:id="@+id/taskType"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="#D3D3D3"
+                android:layout_weight="2"
                 android:clipChildren="false"
                 android:dropDownWidth="match_parent"
-                android:elevation="10dp"
-
+                android:elevation="5dp"
                 android:popupElevation="50dp" />
+
+            <ImageButton
+                android:id="@+id/layoutBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:elevation="10dp"
+                android:background="@color/transparent"
+                android:padding="0dp"
+                android:scaleX="1.5"
+                android:scaleY="1.5"
+                android:src="@drawable/listview_outline" />
         </LinearLayout>
 
         <androidx.core.widget.NestedScrollView

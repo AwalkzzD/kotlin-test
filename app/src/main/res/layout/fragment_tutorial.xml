@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.TutorialFragment">
+
+    <RadioGroup
+        android:id="@+id/courseGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/mad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mobile App Development" />
+
+        <RadioButton
+            android:id="@+id/wd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Web Development" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:id="@+id/courseModulesMAD"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/courseGroup"
+        android:orientation="vertical"
+        android:visibility="invisible">
+
+        <CheckBox
+            android:id="@+id/dbMAD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Database" />
+
+        <CheckBox
+            android:id="@+id/cross"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cross Platform Development" />
+
+        <CheckBox
+            android:id="@+id/nativeAndroid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Native App Development" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/courseModulesWD"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/courseGroup"
+        android:orientation="vertical"
+        android:visibility="invisible">
+
+        <CheckBox
+            android:id="@+id/dbWD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Database" />
+
+        <CheckBox
+            android:id="@+id/mern"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MERN Stack" />
+
+        <CheckBox
+            android:id="@+id/mean"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MEAN Stack" />
+    </LinearLayout>
+
+    <Button
+        android:visibility="invisible"
+        android:id="@+id/reviewSelectionBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/courseModulesWD"
+        android:layout_margin="20dp"
+        android:background="@drawable/transparent_bg_bordered_button"
+        android:fontFamily="@font/alata"
+        android:text="Review"
+        android:textColor="@color/grey_tint_5"
+        android:textSize="20sp" />
+
+</RelativeLayout>

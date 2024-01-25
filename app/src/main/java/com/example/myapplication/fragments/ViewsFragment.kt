@@ -9,15 +9,15 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.example.myapplication.R
 import com.example.myapplication.ToDoActivity
-import com.example.myapplication.databinding.FragmentContactsBinding
+import com.example.myapplication.databinding.FragmentViewsBinding
 
 
-class ContactsFragment : Fragment() {
-    lateinit var binding: FragmentContactsBinding
+class ViewsFragment : Fragment() {
+    lateinit var binding: FragmentViewsBinding
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?
     ): View? {
-        binding = FragmentContactsBinding.inflate(inflater)
+        binding = FragmentViewsBinding.inflate(inflater)
         return binding.root
     }
 
@@ -29,7 +29,15 @@ class ContactsFragment : Fragment() {
         }
 
         binding.alarmBtn.setOnClickListener {
-            findNavController().navigate(R.id.action_contactsFragment_to_alarmFragment)
+            findNavController().navigate(R.id.action_viewsFragment_to_alarmFragment)
+        }
+
+        binding.tutorialBtn.setOnClickListener {
+            findNavController().navigate(R.id.action_viewsFragment_to_tutorialFragment)
+        }
+
+        binding.tabLayoutBtn.setOnClickListener {
+            findNavController().navigate(R.id.action_viewsFragment_to_tabLayoutFragment)
         }
     }
 }

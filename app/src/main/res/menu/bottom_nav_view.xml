@@ -6,9 +6,9 @@
             android:icon="@drawable/bookmark_filled"
             android:title="Profile" />
         <item
-            android:id="@+id/contactsFragment"
+            android:id="@+id/viewsFragment"
             android:icon="@drawable/bookmark_filled"
-            android:title="Contacts" />
+            android:title="Views" />
         <item
             android:id="@+id/aboutFragment"
             android:icon="@drawable/bookmark_filled"
