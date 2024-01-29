@@ -64,10 +64,12 @@ class ToDoActivity : AppCompatActivity(), OnItemClickListener {
 
             if (layoutViewBtn.tag == R.drawable.listview_outline) {
                 tasks.layoutManager = LinearLayoutManager(this)
+//                taskDesignBinding.taskDetail.setTextSize(TypedValue.COMPLEX_UNIT_SP, 25F)
                 layoutViewBtn.setImageResource(R.drawable.gridview_outline)
                 layoutViewBtn.tag = R.drawable.gridview_outline
             } else {
                 tasks.layoutManager = GridLayoutManager(this, 2)
+//                taskDesignBinding.taskDetail.setTextSize(TypedValue.COMPLEX_UNIT_SP, 5F)
                 layoutViewBtn.setImageResource(R.drawable.listview_outline)
                 layoutViewBtn.tag = R.drawable.listview_outline
             }

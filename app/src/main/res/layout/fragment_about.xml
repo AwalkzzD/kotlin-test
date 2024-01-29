@@ -10,6 +10,7 @@
         android:id="@+id/dummyText"
         android:layout_width="wrap_content"
         android:layout_height="400dp"
+        android:breakStrategy="high_quality"
         android:fontFamily="@font/alata"
         android:padding="30dp"
         android:scrollbars="vertical"

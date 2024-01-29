@@ -8,7 +8,6 @@
     tools:context=".fragments.TabLayoutFragment">
 
     <com.google.android.material.tabs.TabLayout
-        app:tabGravity="fill"
         app:tabMode="fixed"
         android:id="@+id/tabLayout"
         android:layout_width="match_parent"
