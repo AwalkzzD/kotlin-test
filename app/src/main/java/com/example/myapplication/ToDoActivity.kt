@@ -11,13 +11,14 @@ import android.widget.ImageButton
 import android.widget.Spinner
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
-import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.ItemTouchHelper
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import androidx.recyclerview.widget.StaggeredGridLayoutManager
 import androidx.room.Room
 import com.example.myapplication.adapters.TaskAdapter
 import com.example.myapplication.dao.TaskDao
+import com.example.myapplication.database.AppDatabase
 import com.example.myapplication.databinding.ActivityToDoBinding
 import com.example.myapplication.databinding.TaskAddDialogBinding
 import com.example.myapplication.databinding.TaskDesignBinding
@@ -64,12 +65,10 @@ class ToDoActivity : AppCompatActivity(), OnItemClickListener {
 
             if (layoutViewBtn.tag == R.drawable.listview_outline) {
                 tasks.layoutManager = LinearLayoutManager(this)
-//                taskDesignBinding.taskDetail.setTextSize(TypedValue.COMPLEX_UNIT_SP, 25F)
                 layoutViewBtn.setImageResource(R.drawable.gridview_outline)
                 layoutViewBtn.tag = R.drawable.gridview_outline
             } else {
-                tasks.layoutManager = GridLayoutManager(this, 2)
-//                taskDesignBinding.taskDetail.setTextSize(TypedValue.COMPLEX_UNIT_SP, 5F)
+                tasks.layoutManager = StaggeredGridLayoutManager(2, LinearLayoutManager.VERTICAL)
                 layoutViewBtn.setImageResource(R.drawable.listview_outline)
                 layoutViewBtn.tag = R.drawable.listview_outline
             }

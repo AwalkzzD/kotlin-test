@@ -31,6 +31,10 @@
             android:id="@+id/action_viewsFragment_to_tabLayoutFragment"
             app:destination="@id/tabLayoutFragment"
             app:popUpTo="@id/viewsFragment" />
+        <action
+            android:id="@+id/action_viewsFragment_to_paginationExampleFragment"
+            app:destination="@id/paginationExampleFragment"
+            app:popUpTo="@id/viewsFragment" />
     </fragment>
     <fragment
         android:id="@+id/alarmFragment"
@@ -47,4 +51,9 @@
         android:name="com.example.myapplication.fragments.TabLayoutFragment"
         android:label="TabLayout"
         tools:layout="@layout/fragment_tab_layout" />
+    <fragment
+        android:id="@+id/paginationExampleFragment"
+        android:name="com.example.myapplication.fragments.PaginationExampleFragment"
+        android:label="fragment_pagination_example"
+        tools:layout="@layout/fragment_pagination_example" />
 </navigation>

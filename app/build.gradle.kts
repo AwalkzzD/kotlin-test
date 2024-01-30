@@ -50,10 +50,21 @@ android {
 dependencies {
     val room_version = "2.6.1"
     val nav_version = "2.7.6"
+    val paging_version = "3.2.1"
+
+    implementation("androidx.legacy:legacy-support-v4:1.0.0")
+    implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.2.0")
+    implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0")
+
+    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.3.1")
 
     implementation("androidx.room:room-runtime:$room_version")
+    implementation("androidx.room:room-ktx:$room_version")
     kapt("androidx.room:room-compiler:$room_version")
-    annotationProcessor("androidx.room:room-compiler:$room_version")
+
+    implementation("androidx.room:room-paging:$room_version")
+
+    implementation("androidx.paging:paging-runtime-ktx:$paging_version")
 
     api("androidx.navigation:navigation-fragment-ktx:$nav_version")
     api("androidx.navigation:navigation-ui-ktx:$nav_version")
