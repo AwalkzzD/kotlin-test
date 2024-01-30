@@ -115,5 +115,32 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tablayoutLabel" />
 
+    <TextView
+        android:id="@+id/pagingLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:fontFamily="@font/alata"
+        android:text="Tap to view Pagination Example!"
+        android:textColor="@color/grey_tint_5"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tabLayoutBtn" />
+
+    <Button
+        android:id="@+id/pagingBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:background="@drawable/transparent_bg_bordered_button"
+        android:fontFamily="@font/alata"
+        android:text="Pagination"
+        android:textColor="@color/grey_tint_5"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pagingLabel" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
