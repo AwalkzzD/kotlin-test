@@ -3,8 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="5dp"
-    app:cardCornerRadius="10dp"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="5dp"
     app:cardElevation="10dp"
     app:strokeColor="@color/grey_tint_5"
     app:strokeWidth="2dp">
@@ -13,9 +13,9 @@
         android:id="@+id/listItemContent"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/grey_tint_5"
+        android:background="@drawable/transparent_bg_bordered"
         android:fontFamily="@font/alata"
-        android:textColor="@color/white"
-        android:textSize="20sp" />
+        android:textColor="@color/grey_tint_5"
+        android:textSize="25sp" />
 
 </com.google.android.material.card.MaterialCardView>

@@ -11,7 +11,6 @@ import com.example.myapplication.R
 import com.example.myapplication.ToDoActivity
 import com.example.myapplication.databinding.FragmentViewsBinding
 
-
 class ViewsFragment : Fragment() {
     lateinit var binding: FragmentViewsBinding
     override fun onCreateView(

@@ -54,6 +54,6 @@
     <fragment
         android:id="@+id/paginationExampleFragment"
         android:name="com.example.myapplication.fragments.PaginationExampleFragment"
-        android:label="fragment_pagination_example"
+        android:label="Pagination"
         tools:layout="@layout/fragment_pagination_example" />
 </navigation>
